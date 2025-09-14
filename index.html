@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+<body>
+    <div id="loading-screen">
+    <div class="bat-symbol">
+        <img src="Assets/Images/batsymbol.png" alt="Batman Logo">
+    </div>
+    <p>Loading Gotham...</p>
+</div>
+
+    <div id="quiz-container" style="display:none;">
+        <h1>🦇 Batman Quiz 🦇</h1>
+        <p>Test your knowledge about Gotham's Dark Knight!</p>
+
+        <form id="quizForm">
+            <h2>1. What is Batman’s real name?</h2>
+            <label><input type="radio" name="q1" value="a"> A) Clark Kent</label>
+            <label><input type="radio" name="q1" value="b"> B) Bruce Wayne</label>
+            <label><input type="radio" name="q1" value="c"> C) Tony Stark</label>
+            <label><input type="radio" name="q1" value="d"> D) Peter Parker</label>
+
+            <h2>2. Which city does Batman protect?</h2>
+            <label><input type="radio" name="q2" value="a"> A) Metropolis</label>
+            <label><input type="radio" name="q2" value="b"> B) Gotham City</label>
+            <label><input type="radio" name="q2" value="c"> C) Star City</label>
+            <label><input type="radio" name="q2" value="d"> D) Central City</label>
+
+            <h2>3. Who is Batman’s archenemy?</h2>
+            <label><input type="radio" name="q3" value="a"> A) Joker</label>
+            <label><input type="radio" name="q3" value="b"> B) Lex Luthor</label>
+            <label><input type="radio" name="q3" value="c"> C) The Riddler</label>
+            <label><input type="radio" name="q3" value="d"> D) Penguin</label>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
